@@ -12,7 +12,7 @@ policies:
     filters:
       - type: offhour
         tag: 'Custodian'
-        default_tz: 'UTC'
+        default_tz: 'GMT'
         offhour: 12  # 12 PM EST (4 PM UTC)
       - type: value
         key: 'region'
@@ -33,7 +33,7 @@ policies:
     filters:
       - type: onhour
         tag: 'Custodian'
-        default_tz: 'UTC'
+        default_tz: 'GMT'
         onhour: 9  # 9 AM EST (1 PM UTC)
       - type: value
         key: 'region'
