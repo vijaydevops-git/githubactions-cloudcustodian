@@ -9,10 +9,12 @@ policies:
       tags:
         'Custodian': 'present'
       role: arn:aws:iam::891377088702:role/service-role/cloudcustodian-role-trxije47
+    regions:
+      - us-east-1
+      - us-west-2  
     filters:
       - type: offhour
         tag: 'Custodian'
-        region: us-east-1
         default_tz: 'est'
         offhour: 12
     actions:
@@ -28,10 +30,12 @@ policies:
       tags:
         'Custodian': 'present'
       role: arn:aws:iam::891377088702:role/service-role/cloudcustodian-role-trxije47
+    regions:
+      - us-east-1
+      - us-west-2   
     filters:
       - type: onhour
         tag: 'Custodian'
-        region: us-east-1
         default_tz: 'est'
         onhour: 9
     actions:
