@@ -12,6 +12,7 @@ policies:
     filters:
       - type: offhour
         tag: 'Custodian'
+        region: us-east-1
         default_tz: 'est'
         offhour: 12
     actions:
@@ -30,6 +31,7 @@ policies:
     filters:
       - type: onhour
         tag: 'Custodian'
+        region: us-east-1
         default_tz: 'est'
         onhour: 9
     actions:
